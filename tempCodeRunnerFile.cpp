@@ -1,1 +1,5 @@
-                vector<string> v_string(n, "X");
+void swap(int& a, int& b){
+    int temp = a;
+    a = b;
+    b = temp;
+}

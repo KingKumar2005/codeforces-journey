@@ -19,13 +19,10 @@ int main() {
             swap(arr[j], arr[j + 1]);
             j--;
         }
-
-        for(int k : arr){
-            cout << k << " ";
-        }
-        cout << endl;
     }
-
+    for(int k : arr){
+        cout << k << " ";
+    }
     
 
     return 0;
