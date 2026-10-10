@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     017800nenesGames
+relocations:
+  - { offset: 0x2840D, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xBE22C, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offset: 0x28CCC, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_017800nenesGames.cpp, symObjAddr: 0x3D8, symBinAddr: 0x100000A70, symSize: 0x14 }
+  - { offset: 0x28CE4, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x39C, symBinAddr: 0x100000A34, symSize: 0x3C }
+  - { offset: 0x28D03, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x32C, symBinAddr: 0x1000009CC, symSize: 0x68 }
+  - { offset: 0x28D33, size: 0x8, addend: 0x0, symName: __Z8solutionv, symObjAddr: 0x0, symBinAddr: 0x1000006A0, symSize: 0x32C }
+...
