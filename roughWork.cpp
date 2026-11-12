@@ -2,13 +2,19 @@
 using namespace std;
 
 void solution(){
-    string s = "sinx";
-    string r = s.substr(0,2);
-    cout << r;
+    int x, y, k;
+    cin >> x >> y >> k;
 }
 
 int main(){
-    solution();
+    int t;
+    cin >> t;
+
+    while(t--){
+        solution();
+        cout << endl;
+    }
+    // solution();
 
     return 0;
 }
