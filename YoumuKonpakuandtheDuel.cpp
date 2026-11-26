@@ -1,19 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution(){
-    int x, count = 4;
-    cin >> x;           // Initialy Youmu has 1 attack power
-    
-    if(x <= 3){
-        cout << x;
-    }
-    else{
-        for(int i = 4 ; i < x ; i = i + 2){
-            count += 1;
+int max_damage(int m){
+    int m_d = 0;                    // maximum damage
+    int d = 0;
+    for(int a = 1 ; a <= m ; a++){
+        int c = m - a;
+        if(a <= (c + 1)){
+            d = (a * c) - ((a * (a - 3)) / 2);
+        }else if(a > (c + 1)){
+            d = (a - (c + 1)) + (((c + 1) * (c + 2)) / 2);
         }
-        cout << count;
+        if(d > m_d){
+            m_d = d;
+        }
     }
+    return m_d;
+}
+
+void solution(){
+    
+    int x;
+    cin >> x;
+
+    int max_d = 0;
+    int min_m = 0;
+    for(int m = 1 ; m <= x ; m++){
+        int temp = max_damage(m);
+        if(temp >= x){
+            max_d = temp;
+            min_m = m;
+            break;
+        }
+    }
+    cout << min_m;
 }
 
 int main(){
